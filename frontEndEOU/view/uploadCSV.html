@@ -1,0 +1,18 @@
+<div class="jumbotron">
+
+  <h3>Upload de csv</h3>
+
+	<form name="uploadForm">
+		<input class="form-control" type="file" name="arquivo" onchange="angular.element(this).scope().uploadCSV(this.files)"   />
+	</form>
+
+
+	<a class="btn btn-primary btn-block" href="#/">Ver lista de usuários</a>
+
+	<div class="alert alert-success" ng-show="mostrarAlerta">
+		<button type="button" class="close" data-ng-click="switchBool('mostrarAlerta')" >×</button>
+		<strong>{{mensagem1}}</strong> {{mensagem2}}
+	</div>
+
+</div>
+

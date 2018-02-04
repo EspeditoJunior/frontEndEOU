@@ -1,0 +1,30 @@
+<div class="jumbotron">
+        <h3>{{app}}</h3>
+    
+        <hr/>
+        
+        <table class="table" ng-show="users.length > 0">
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>CPF</th>
+                <th>Telefone</th>
+                <th>Local</th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="user in users">
+                <td>{{user.nome}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.cpf}}</td>
+                <td>{{user.telefone}}</td>
+                <td>{{user.local}}</td>
+                <td><div style="width: 20px;height: 20px"></div></td>
+            </tr>
+        </table>
+    
+        <hr/>
+    
+        <a class="btn btn-primary btn-block" href="#/novoUsuario">Novo Usuario</a>
+        <a class="btn btn-primary btn-block" href="#/uploadCSV">Upload de CSV</a>
+       
+    </div>
